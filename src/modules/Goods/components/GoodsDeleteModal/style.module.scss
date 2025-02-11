@@ -1,0 +1,13 @@
+.item {
+	display: flex;
+	flex-direction: column;
+
+	&:not(:first-child) {
+		padding-top: 8px;
+	}
+	
+	&:not(:last-child) {
+		padding-bottom: 8px;
+		border-bottom: 1px solid var(--bg-accent);
+	}
+}

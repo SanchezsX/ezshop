@@ -1,0 +1,37 @@
+.view {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 50;;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	background-color: #000000;
+	width: 100svw;
+	height: 100svh;
+	padding: 16px;
+
+	&_header {
+		display: flex;
+		justify-content: space-between;
+		z-index: 1;
+	}
+
+	&_content {
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		width: 100svw;
+		height: 100svh;
+
+		object-fit: contain;
+	}
+
+	&_button {
+		margin-top: auto;
+		z-index: 1;
+	}
+}

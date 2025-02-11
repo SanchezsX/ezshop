@@ -1,0 +1,16 @@
+.skeleton {
+	border-radius: var(--round);
+	background: linear-gradient(90deg, rgba(0, 0, 0, .05) 5%, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.05) 50%);
+	background-size: 200% 100%;
+	animation: shimmer 1.5s infinite linear;
+	will-change: transform;
+}
+
+@keyframes shimmer {
+	from {
+		background-position: -100% 0;
+	}
+	to {
+		background-position: 100% 0;
+	}
+}

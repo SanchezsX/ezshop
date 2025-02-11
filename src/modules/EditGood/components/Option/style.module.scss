@@ -1,0 +1,50 @@
+.wrap {
+  position: relative;
+}
+
+.delete {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  
+  & > input {
+    width: 20px;
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+  flex-shrink: 0;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  
+  & > div > div {
+    width: 100px !important;
+  }
+  
+  padding-top: 4px;
+  overflow-x: auto;
+}
+
+.priced_block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+

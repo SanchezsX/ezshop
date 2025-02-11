@@ -1,0 +1,28 @@
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	margin-top: 22px;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+
+	background-color: var(--tg-theme-bg-color);
+	text-align: center;
+	border-radius: 18px;
+	padding: 6px;
+
+	&_title {
+		color: var(--base-text-color);
+		font-size: 17px;
+		font-weight: 600;
+	}
+
+	&_status {
+		color: var(--gray-dark-color);
+		font-size: 12px;
+	}
+}

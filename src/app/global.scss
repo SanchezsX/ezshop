@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+
+:root {
+	--primary-color: var(--tg-theme-button-color);
+	--primary-color-active: var(--tg-theme-button-color);
+	--danger-color: var(--tg-theme-destructive-text-color);
+	--success-color: #35E555;
+	--warning-color: #E5BC35;
+	--gray-color: var(--tg-theme-hint-color);
+	--gray-dark-color: var(--tg-theme-hint-color);
+	--gray-light-color: var(--tg-theme-hint-color);
+	
+	--base-text-color: var(--tg-theme-text-color);
+	
+	--border: var(--tg-theme-secondary-bg-color);
+	--bg-color: var(--tg-theme-secondary-bg-color);
+	--bg-accent: var(--tg-theme-hint-color);
+	
+	--gap: 12px;
+	--round: 14px;
+	
+	--font-xl: 20px;
+	--font-lg: 18px;
+	--font-base: 15px;
+	--font-sm: 12px;
+}
+
+////////////////////////////////////////////////////////////////////////////
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: var(--font-base);
+	background-color: var(--bg-color);
+	color: var(--base-text-color);
+	padding-block: 24px;
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+////////////////////////////////////////////////////////////////////////////
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}

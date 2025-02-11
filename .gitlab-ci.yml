@@ -1,0 +1,41 @@
+stages:
+  - deploy
+
+variables:
+#  GIT_CLEAN_FLAGS: -ffdx -e venv/
+  GIT_DEPTH: "3"
+
+.interruptable_job:
+  interruptible: true
+
+.set_ssh_script:
+  before_script:
+    - command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client -y )
+    - mkdir -p ~/.ssh
+    - echo $SSH_PRIVATE_KEY | base64 -d > ~/.ssh/id_rsa
+    - echo >> ~/.ssh/id_rsa
+    - chmod -R 600 ~/.ssh
+    - eval $(ssh-agent -s)
+    - ssh-add ~/.ssh/id_rsa
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" >> ~/.ssh/config'
+
+.autopull_script:
+  extends:
+    - .interruptable_job
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - AUTHOR=$GITLAB_USER_LOGIN
+    - echo $CI_PIPELINE_SOURCE
+    - echo This commit is sent by $AUTHOR
+    - ssh $USER@$IP "bash $SCRIPT_FILE"
+  needs: []
+
+deploy_front_job:
+  stage: deploy
+  variables:
+    SCRIPT_FILE: new_admin_front_autopull.sh
+  extends:
+    - .set_ssh_script
+    - .autopull_script
+

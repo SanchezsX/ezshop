@@ -1,0 +1,42 @@
+.options {
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+}
+
+.option {
+	position: relative;
+	
+	width: 100%;
+	padding: 18px;
+	border: 2px solid var(--bg-accent);
+	border-radius: 14px;
+	margin-top: 6px;
+	
+	transition: border-color .2s ease;
+	
+	&_placeholder {
+		position: absolute;
+		top: -12px;
+		left: 8px;
+		
+		background-color: #FFFFFF;
+		color: var(--gray-dark-color);
+		font-weight: 600;
+		padding-inline: 10px;
+		
+		transition: color .2s ease;
+	}
+	
+	& > img {
+		width: 100%;
+	}
+	
+	&.active {
+		border-color: var(--primary-color);
+	}
+	
+	&.active &_placeholder {
+		color: var(--primary-color);
+	}
+}

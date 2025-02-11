@@ -1,0 +1,17 @@
+[Unit]
+Description=dev test front bot service
+
+Wants=network.target
+After=syslog.target network-online.target
+
+[Service]
+Environment="PYTHONPATH=/home/debug/front_admin_panel"
+Type=simple
+WorkingDirectory=/home/debug/front_admin_panel/debug_bot
+ExecStart=/home/debug/front_admin_panel/venv/bin/python3 /home/debug/front_admin_panel/debug_bot/bot.py
+KillMode=process
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

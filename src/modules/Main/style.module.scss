@@ -1,0 +1,15 @@
+.section {
+	margin-top: 32px;
+
+	&_title {
+		font-size: 20px;
+		font-weight: 600;
+	}
+}
+
+.skeletons {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	margin-top: 22px;
+}

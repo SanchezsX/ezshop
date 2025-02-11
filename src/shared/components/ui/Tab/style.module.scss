@@ -1,0 +1,10 @@
+.tab {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 11px;
+}
+
+.disabled {
+	opacity: .6;
+	pointer-events: none;
+}

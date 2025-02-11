@@ -1,0 +1,7 @@
+.hint {
+	width: 18px;
+	height: 18px;
+	& > img {
+		pointer-events: none;
+	}
+}

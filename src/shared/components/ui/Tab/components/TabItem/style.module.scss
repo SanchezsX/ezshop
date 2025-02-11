@@ -1,0 +1,14 @@
+.item {
+	background-color: var(--bg-accent);
+	width: 157px;
+	padding: 8px;
+	border-radius: 20px;
+	border: 2px solid transparent;
+
+	font-size: 13px;
+	transition: border-color .2s ease;
+	
+	&.active {
+		border-color: var(--primary-color);
+	}
+}

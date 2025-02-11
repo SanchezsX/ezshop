@@ -1,0 +1,26 @@
+.inputs {
+	display: flex;
+	gap: 4px;
+}
+.options {
+	display: block;
+	text-align: center;
+	padding: 40px 0;
+	margin-inline: auto;
+	
+	&_label {
+		padding-top: 6px;
+	}
+}
+
+.file {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	color: var(--primary-color);
+}
+
+.options_label {
+	font-size: 14px;
+	color: var(--gray-dark-color);
+}

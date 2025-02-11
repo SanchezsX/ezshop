@@ -1,0 +1,44 @@
+.bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 60;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: rgba(0, 0, 0, .1);
+	width: 100svw;
+	height: 100svh;
+	padding-inline: 16px;
+}
+
+.modal {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+
+	width: 100%;
+	background-color: #FFFFFF;
+	padding-inline: 16px;
+	padding-top: 25px;
+	padding-bottom: 16px;
+	border-radius: 15px;
+
+	&_close {
+		position: absolute;
+		top: 16px;
+		right: 16px;
+		width: 12px;
+		height: 12px;
+	}
+
+	&_title {
+		color: var(--primary-color);
+		font-weight: 600;
+	}
+}
+

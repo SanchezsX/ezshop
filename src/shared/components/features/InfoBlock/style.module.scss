@@ -1,0 +1,28 @@
+.block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin-inline: auto;
+
+	max-width: 258px;
+	text-align: center;
+
+	&:not(.own) > img {
+		width: 62px;
+		height: 62px;
+	}
+
+	& > h2 {
+		font-weight: 600;
+
+		margin-top: 22px;
+	}
+
+	& > p {
+		color: var(--gray-dark-color);
+		font-size: 12px;
+		font-weight: 500;
+		margin-top: 6px;
+	}
+}

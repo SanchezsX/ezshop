@@ -1,0 +1,18 @@
+.card {
+	display: flex;
+	gap: 15px;
+
+	background-color: var(--tg-theme-bg-color);
+	width: 100%;
+	padding: 16px;
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.right {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	
+	width: 100%;
+}

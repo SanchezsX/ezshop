@@ -1,0 +1,31 @@
+.section {
+	position: absolute;
+	top: 0;	
+	left: 0;
+	z-index: 40;
+
+	width: 100svw;
+	height: 100svh;
+	padding-block: 24px;
+
+	background-color: var(--bg-color);
+
+	&_price {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+}
+
+.categories {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.none {
+	color: var(--gray-dark-color);
+	font-size: 13px;
+	margin-inline: auto;
+	margin-top: -10px;
+}

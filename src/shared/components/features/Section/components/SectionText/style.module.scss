@@ -1,0 +1,18 @@
+.text {
+	display: flex;
+	flex-direction: column;
+	
+	& > h4 {
+		color: var(--base-text-color);
+		line-height: 22px;
+	}
+
+	& > p {
+		color: var(--gray-dark-color);
+		font-size: 12px;
+	}
+
+	&  span {
+		color: var(--primary-color);
+	}
+}

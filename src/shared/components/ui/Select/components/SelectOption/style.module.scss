@@ -1,0 +1,11 @@
+.option {
+	width: 100%;
+	padding: 12px 12px;
+	border-radius: 8px;
+
+	text-align: left;
+
+	&.active {
+		background-color: var(--bg-accent);
+	}
+}

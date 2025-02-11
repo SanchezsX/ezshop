@@ -1,0 +1,38 @@
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: currentColor;
+	width: 100%;
+	height: 50px;
+	border-radius: var(--round);
+
+	color: #FFFFFF;
+	font-weight: 600;
+	text-align: center;
+
+	&:disabled {
+		opacity: .6;
+		pointer-events: none;
+	}
+
+	transition: background-color .2s ease;
+}
+
+.primary {
+	background-color: var(--primary-color);
+	
+	&:active {
+		background-color: var(--primary-color-active);
+	}
+}
+
+.danger {
+	background-color: transparent;
+	color: var(--danger-color);
+	
+	&:active {
+		opacity: .6;
+	}
+}
